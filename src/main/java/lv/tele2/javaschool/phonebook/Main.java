@@ -28,8 +28,7 @@ public class Main {
         FileInputStream fis=new FileInputStream(file);
         ObjectInputStream ois=new ObjectInputStream(fis);
         PhoneBook result= (PhoneBook) ois.readObject();
-        ois.close();
-        fis.close();
+        ois.close();        fis.close();
         return result;
     }
 
